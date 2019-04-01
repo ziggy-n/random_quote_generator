@@ -66,10 +66,10 @@ function printQuote(){
   let html_string =
     '<p class="quote">' + rQuote.quote  + '</p>'
     + '<p class="source">' + rQuote.source;
-  if(rQuote.hasOwnProperty('citation')){
+  if(rQuote.citation){
     html_string += '<span class="citation">' + rQuote.citation +  '</span>'
   }
-  if(rQuote.hasOwnProperty('year')){
+  if(rQuote.year){
     html_string += '<span class="year">' + rQuote.year + '</span>';
   }
   html_string += '</p>';
